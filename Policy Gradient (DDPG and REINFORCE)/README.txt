@@ -9,4 +9,4 @@ Additionally, there is a file called source, which contains all the ipython file
 
 in the code, actor wants maximize the expection of Q, so we want gradient ascent, which is -gradient descent. therefore the loss function of actor is -expection of Q, we use gradient descent to minimize. 
 
--Q is -critic.forward(states, actor.forward(states)).mean() where 
+-Q is -critic.forward(states, actor.forward(states)).mean()  =  -expection of Q, where I use this to do pytorch derivative for actor
